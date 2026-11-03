@@ -1,5 +1,5 @@
 {
-  "name": "napojeno-glass-checkout",
+  "name": "glass-checkout",
   "version": "1.0.0",
   "type": "module",
   "description": "Skleněná platební pokladna v brandu NAPOJENO (React + Vite + TypeScript + GSAP), ukázková data",
