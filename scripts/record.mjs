@@ -35,7 +35,7 @@ const encodeArgs = (input, output, w, h, extra = []) => [
   "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-profile:v", "high", "-level", "4.2",
   "-pix_fmt", "yuv420p",
   "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
-  "-r", String(FPS), "-movflags", "+faststart", "-an",
+  "-r", String(FPS), "-bsf:v", "h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1", "-movflags", "+faststart", "-an",
   output,
 ];
 
